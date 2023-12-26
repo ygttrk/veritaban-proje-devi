@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace forms_turk
 {
-    public partial class Form1 : Form
+    public partial class FormHome : Form
     {
-        public Form1()
+        public FormHome()
         {
             InitializeComponent();
         }
@@ -16,8 +16,10 @@ namespace forms_turk
 
             try
             {
+                listBox1.Items.Clear();
                 foreach (var item in await GetPersonelListAsync())
                 {
+
                     listBox1.Items.Add(item.Ad + " " + item.Soyad + " " + item.TelNo);
                 }
 
@@ -30,6 +32,7 @@ namespace forms_turk
 
 
         }
+
         public async Task<List<Personel>> GetPersonelListAsync()
         {
             using (var context = new AppDbContext())
@@ -40,6 +43,11 @@ namespace forms_turk
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
