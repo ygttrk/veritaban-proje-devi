@@ -9,7 +9,7 @@ namespace forms_turk.Models
 {
     public class AylikCiro
     {
-        [Key]
+
         public int Id { get; set; }
 
         [Required]

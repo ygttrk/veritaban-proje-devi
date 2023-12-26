@@ -1,4 +1,5 @@
 ﻿using forms_turk.Context;
+using forms_turk.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,48 +7,53 @@ using System.Threading.Tasks;
 
 namespace forms_turk.Queries
 {
-    public class EmployeeQueries
+    public class PersonelQueries
     {
         private readonly AppDbContext _context;
 
-        public EmployeeQueries(AppDbContext context)
+        public PersonelQueries(AppDbContext context)
         {
             _context = context;
         }
 
-        public async Task AddEmployee(string firstName, string lastName, string phoneNumber)
+        public async Task AddPersonel(string ad, string soyad, string telNo)
         {
-            var newEmployee = new Employee { FirstName = firstName, LastName = lastName, PhoneNumber = phoneNumber };
+            var newPersonel = new Personel { Ad = ad, Soyad = soyad, TelNo = telNo };
 
-            _context.Employee.Add(newEmployee);
+            _context.Personel.Add(newPersonel);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteEmployee(int employeeId)
+        public async Task DeletePersonel(int personelId)
         {
-            var employeeToDelete = await _context.Employee.FindAsync(employeeId);
+            var personelToDelete = await _context.Personel.FindAsync(personelId);
 
-            if (employeeToDelete != null)
+            if (personelToDelete != null)
             {
-                _context.Employee.Remove(employeeToDelete);
+                _context.Personel.Remove(personelToDelete);
                 await _context.SaveChangesAsync();
             }
         }
 
-        public async Task<Employee> GetEmployeeById(int employeeId)
+        public async Task<Personel> GetPersonelById(int personelId)
         {
-            var employee = await _context.Employee.FindAsync(employeeId);
-            return employee;
+            var personel = await _context.Personel.FindAsync(personelId);
+            return personel;
         }
 
-        public async Task<List<Employee>> GetEmployeeByName(string firstName)
+        public async Task<List<Personel>> GetPersonelByName(string ad)
         {
-            var employees = await _context.Employee
-                .Where(e => e.FirstName.ToLower() == firstName.ToLower())
+            var personeller = await _context.Personel
+                .Where(p => p.Ad.ToLower() == ad.ToLower())
                 .ToListAsync();
 
-            return employees;
+            return personeller;
         }
 
-
-
+        public List<Personel> GetAllPersoneller()
+        {
+            var personeller = _context.Personel.ToList();
+            return personeller;
+        }
+    }
+}

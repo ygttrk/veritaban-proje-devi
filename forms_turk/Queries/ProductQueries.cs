@@ -52,10 +52,10 @@ namespace forms_turk.Queries
             return product;
         }
 
-        public async Task<List<Urun>> GetProductByMarka(string marka)
+        public async Task<List<Urun>> GetProductByUrunKodu(string urunKodu)
         {
             var products = await _context.Urun
-                .Where(p => p.UrunMarka.ToLower() == marka.ToLower())
+                .Where(p => p.UrunKodu.ToLower() == urunKodu.ToLower())
                 .ToListAsync();
 
             return products;

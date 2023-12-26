@@ -31,7 +31,7 @@ namespace forms_turk.Context
         }
 
         public DbSet<AlisVeris> AlisVeris { get; set; }
-        public DbSet<AylikCiro> Aylik_Ciro { get; set; }
+        public DbSet<AylikCiro> AylikCiro { get; set; }
         public DbSet<Ilce> Ilce { get; set; }
         public DbSet<Mahalle> Mahalle { get; set; }
         public DbSet<Musteri> Musteri { get; set; }
