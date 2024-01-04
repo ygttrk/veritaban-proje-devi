@@ -13,9 +13,9 @@ namespace forms_turk.Models
         [Key]
         public int Id {  get; set; }
         
-        public string Ad { get; set; }
-        public string Soyad { get; set; }
-        public string SirketAdi { get; set; }
+        public string? Ad { get; set; }
+        public string? Soyad { get; set; }
+        public string? SirketAdi { get; set; }
         [Required]
         public bool IsKurumsal { get; set; }
         [Required]

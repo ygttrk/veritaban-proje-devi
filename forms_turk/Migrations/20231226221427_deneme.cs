@@ -12,7 +12,7 @@ namespace forms_turk.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Aylik_Ciro",
+                name: "AylikCiro",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -22,7 +22,7 @@ namespace forms_turk.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Aylik_Ciro", x => x.Id);
+                    table.PrimaryKey("PK_AylikCiro", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -232,7 +232,7 @@ namespace forms_turk.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Aylik_Ciro");
+                name: "AylikCiro");
 
             migrationBuilder.DropTable(
                 name: "Urun");

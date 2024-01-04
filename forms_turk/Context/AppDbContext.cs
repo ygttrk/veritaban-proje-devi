@@ -23,8 +23,8 @@ namespace forms_turk.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-BKHR88K;" +
-                    "Initial Catalog=turk_konveksiyon2;" +
+                optionsBuilder.UseSqlServer("Data Source=LAPTOP-NKF0DJ1C\\SQLEXPRESS;" +
+                    "Initial Catalog=turk_konveksiyon4;" +
                     "Integrated Security=True;Encrypt=True;" +
                     "Trust Server Certificate=True");
             }

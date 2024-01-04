@@ -14,10 +14,10 @@ namespace forms_turk.Context
         public AppDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-BKHR88K;" +
-                                        "Initial Catalog=turk_konveksiyon2;" +
-                                        "Integrated Security=True;Encrypt=True;" +
-                                        "Trust Server Certificate=True");
+            optionsBuilder.UseSqlServer("Data Source=LAPTOP-NKF0DJ1C\\SQLEXPRESS;" +
+                    "Initial Catalog=turk_konveksiyon4;" +
+                    "Integrated Security=True;Encrypt=True;" +
+                    "Trust Server Certificate=True");
 
             return new AppDbContext(optionsBuilder.Options);
         }

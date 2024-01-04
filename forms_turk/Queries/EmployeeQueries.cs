@@ -16,13 +16,7 @@ namespace forms_turk.Queries
             _context = context;
         }
 
-        public async Task AddPersonel(string ad, string soyad, string telNo)
-        {
-            var newPersonel = new Personel { Ad = ad, Soyad = soyad, TelNo = telNo };
 
-            _context.Personel.Add(newPersonel);
-            await _context.SaveChangesAsync();
-        }
 
         public async Task DeletePersonel(int personelId)
         {
@@ -50,9 +44,9 @@ namespace forms_turk.Queries
             return personeller;
         }
 
-        public List<Personel> GetAllPersoneller()
+        public async Task<List<Personel>> GetAllPersoneller()
         {
-            var personeller = _context.Personel.ToList();
+            var personeller = await _context.Personel.ToListAsync();
             return personeller;
         }
     }

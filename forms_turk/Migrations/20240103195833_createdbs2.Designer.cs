@@ -12,8 +12,8 @@ using forms_turk.Context;
 namespace forms_turk.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231226142640_düzeltme")]
-    partial class düzeltme
+    [Migration("20240103195833_createdbs2")]
+    partial class createdbs2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,7 +79,7 @@ namespace forms_turk.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Aylik_Ciro");
+                    b.ToTable("AylikCiro");
                 });
 
             modelBuilder.Entity("forms_turk.Models.Ilce", b =>

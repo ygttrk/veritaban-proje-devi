@@ -5,7 +5,7 @@
 namespace forms_turk.Migrations
 {
     /// <inheritdoc />
-    public partial class düzeltme : Migration
+    public partial class createdbs3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

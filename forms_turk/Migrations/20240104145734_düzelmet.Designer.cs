@@ -12,8 +12,8 @@ using forms_turk.Context;
 namespace forms_turk.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231226135552_deneme")]
-    partial class deneme
+    [Migration("20240104145734_düzelmet")]
+    partial class düzelmet
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace forms_turk.Migrations
                     b.ToTable("AlisVeris");
                 });
 
-            modelBuilder.Entity("forms_turk.Models.Aylik_Ciro", b =>
+            modelBuilder.Entity("forms_turk.Models.AylikCiro", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -79,7 +79,7 @@ namespace forms_turk.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Aylik_Ciro");
+                    b.ToTable("AylikCiro");
                 });
 
             modelBuilder.Entity("forms_turk.Models.Ilce", b =>
@@ -153,7 +153,6 @@ namespace forms_turk.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("SirketAdi")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Soyad")

@@ -12,8 +12,8 @@ namespace forms_turk.Models
     {
         
         public int Id { get; set; }
-        [ForeignKey("Urunid")]
-        public List<Urun> Uruns { get; set; }
+
+
 
         [Required]
         public int UrunId { get; set; }
@@ -22,7 +22,7 @@ namespace forms_turk.Models
         public Musteri Musteri { get; set; }
         [Required]
        
-
+   
         public Personel Personel { get; set; }
         [Required]
         public int PersonelId { get; set; }
