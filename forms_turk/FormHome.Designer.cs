@@ -5,6 +5,9 @@ namespace forms_turk
     {
 
       
+
+
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -50,55 +53,59 @@ namespace forms_turk
             txtBoxESoyad = new TextBox();
             txtBoxEAd = new TextBox();
             panelStock = new Panel();
+            comboBox4 = new ComboBox();
+            label13 = new Label();
+            textBox4 = new TextBox();
+            label12 = new Label();
+            textBox3 = new TextBox();
+            label11 = new Label();
+            textBox2 = new TextBox();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
             txtBoxUrunTur = new TextBox();
             txtBoxUrun = new TextBox();
             btnBackStock1 = new Button();
             panelMenu = new Panel();
+            btnProductTypeAdd = new Button();
             btnProductAdd = new Button();
             panelShopping = new Panel();
-            comboBoxUrun = new ComboBox();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            comboBoxMusteri = new ComboBox();
-            comboBoxPersonel = new ComboBox();
-            label1 = new Label();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            txtBoxAdet = new TextBox();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            textBox2 = new TextBox();
-            label11 = new Label();
-            textBox3 = new TextBox();
-            label12 = new Label();
-            textBox4 = new TextBox();
-            label13 = new Label();
-            comboBox4 = new ComboBox();
-            btnProductTypeAdd = new Button();
-            panelProductType = new Panel();
-            label14 = new Label();
-            textBox5 = new TextBox();
-            panel2 = new Panel();
-            label15 = new Label();
-            txtBoxCAd = new TextBox();
-            label16 = new Label();
-            txtBoxCSoyad = new TextBox();
-            label17 = new Label();
-            txtBoxCSirket = new TextBox();
-            label18 = new Label();
-            txtBoxCIletisim = new TextBox();
-            label20 = new Label();
-            btnAddProductType = new Button();
-            btnAddCustomer = new Button();
             btnAddShopping = new Button();
-            txtBoxCAdres = new TextBox();
-            label19 = new Label();
-            comboBoxSehir = new ComboBox();
-            label21 = new Label();
-            comboBoxIlce = new ComboBox();
-            label22 = new Label();
+            txtBoxAdet = new TextBox();
+            label1 = new Label();
+            comboBoxPersonel = new ComboBox();
+            comboBoxMusteri = new ComboBox();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            comboBoxUrun = new ComboBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            panelProductType = new Panel();
+            btnAddProductType = new Button();
+            textBox5 = new TextBox();
+            label14 = new Label();
+            panel2 = new Panel();
             comboBoxMahalle = new ComboBox();
+            label22 = new Label();
+            comboBoxIlce = new ComboBox();
+            label21 = new Label();
+            comboBoxSehir = new ComboBox();
+            label19 = new Label();
+            btnAddCustomer = new Button();
+            txtBoxCAdres = new TextBox();
+            label20 = new Label();
+            txtBoxCIletisim = new TextBox();
+            label18 = new Label();
+            txtBoxCSirket = new TextBox();
+            label17 = new Label();
+            txtBoxCSoyad = new TextBox();
+            label16 = new Label();
+            txtBoxCAd = new TextBox();
+            label15 = new Label();
+            daaaaBindingSource = new BindingSource(components);
+            sehirBindingSource = new BindingSource(components);
+            sehirBindingSource1 = new BindingSource(components);
+            sehirBindingSource2 = new BindingSource(components);
             panel1.SuspendLayout();
             panelEmployee.SuspendLayout();
             panelStock.SuspendLayout();
@@ -106,6 +113,10 @@ namespace forms_turk
             panelShopping.SuspendLayout();
             panelProductType.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)daaaaBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sehirBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sehirBindingSource1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sehirBindingSource2).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -301,6 +312,95 @@ namespace forms_turk
             panelStock.Size = new Size(216, 357);
             panelStock.TabIndex = 21;
             // 
+            // comboBox4
+            // 
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new Point(35, 294);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(121, 23);
+            comboBox4.TabIndex = 31;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Impact", 15F);
+            label13.Location = new Point(35, 266);
+            label13.Name = "label13";
+            label13.Size = new Size(90, 25);
+            label13.TabIndex = 34;
+            label13.Text = "Ürün Türü";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(35, 240);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(158, 23);
+            textBox4.TabIndex = 33;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Impact", 15F);
+            label12.Location = new Point(35, 215);
+            label12.Name = "label12";
+            label12.Size = new Size(48, 25);
+            label12.TabIndex = 32;
+            label12.Text = "Stok";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(35, 189);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(158, 23);
+            textBox3.TabIndex = 31;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Impact", 15F);
+            label11.Location = new Point(35, 164);
+            label11.Name = "label11";
+            label11.Size = new Size(50, 25);
+            label11.TabIndex = 30;
+            label11.Text = "Fiyat";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(35, 138);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(158, 23);
+            textBox2.TabIndex = 29;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Impact", 15F);
+            label10.Location = new Point(35, 110);
+            label10.Name = "label10";
+            label10.Size = new Size(95, 25);
+            label10.TabIndex = 28;
+            label10.Text = "Ürün Kodu";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Impact", 15F);
+            label9.Location = new Point(35, 56);
+            label9.Name = "label9";
+            label9.Size = new Size(108, 25);
+            label9.TabIndex = 27;
+            label9.Text = "Ürün Modeli";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Impact", 15F);
+            label8.Location = new Point(35, 3);
+            label8.Name = "label8";
+            label8.Size = new Size(50, 25);
+            label8.TabIndex = 26;
+            label8.Text = "Ürün";
+            // 
             // txtBoxUrunTur
             // 
             txtBoxUrunTur.Location = new Point(35, 84);
@@ -340,6 +440,15 @@ namespace forms_turk
             panelMenu.TabIndex = 22;
             panelMenu.Paint += panelMenu_Paint;
             // 
+            // btnProductTypeAdd
+            // 
+            btnProductTypeAdd.Location = new Point(38, 193);
+            btnProductTypeAdd.Name = "btnProductTypeAdd";
+            btnProductTypeAdd.Size = new Size(158, 23);
+            btnProductTypeAdd.TabIndex = 21;
+            btnProductTypeAdd.Text = "Ürün Türü Ekle";
+            btnProductTypeAdd.UseVisualStyleBackColor = true;
+            // 
             // btnProductAdd
             // 
             btnProductAdd.Location = new Point(38, 158);
@@ -366,59 +475,21 @@ namespace forms_turk
             panelShopping.Size = new Size(197, 281);
             panelShopping.TabIndex = 24;
             // 
-            // comboBoxUrun
+            // btnAddShopping
             // 
-            comboBoxUrun.FormattingEnabled = true;
-            comboBoxUrun.Location = new Point(24, 41);
-            comboBoxUrun.Name = "comboBoxUrun";
-            comboBoxUrun.Size = new Size(121, 23);
-            comboBoxUrun.TabIndex = 0;
+            btnAddShopping.Location = new Point(107, 244);
+            btnAddShopping.Name = "btnAddShopping";
+            btnAddShopping.Size = new Size(75, 23);
+            btnAddShopping.TabIndex = 39;
+            btnAddShopping.Text = "Ekle";
+            btnAddShopping.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // txtBoxAdet
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Impact", 15F);
-            label5.Location = new Point(24, 13);
-            label5.Name = "label5";
-            label5.Size = new Size(50, 25);
-            label5.TabIndex = 25;
-            label5.Text = "Ürün";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Impact", 15F);
-            label6.Location = new Point(24, 65);
-            label6.Name = "label6";
-            label6.Size = new Size(73, 25);
-            label6.TabIndex = 26;
-            label6.Text = "Müşteri";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Impact", 15F);
-            label7.Location = new Point(24, 117);
-            label7.Name = "label7";
-            label7.Size = new Size(83, 25);
-            label7.TabIndex = 27;
-            label7.Text = "Personel";
-            // 
-            // comboBoxMusteri
-            // 
-            comboBoxMusteri.FormattingEnabled = true;
-            comboBoxMusteri.Location = new Point(24, 91);
-            comboBoxMusteri.Name = "comboBoxMusteri";
-            comboBoxMusteri.Size = new Size(121, 23);
-            comboBoxMusteri.TabIndex = 28;
-            // 
-            // comboBoxPersonel
-            // 
-            comboBoxPersonel.FormattingEnabled = true;
-            comboBoxPersonel.Location = new Point(24, 145);
-            comboBoxPersonel.Name = "comboBoxPersonel";
-            comboBoxPersonel.Size = new Size(121, 23);
-            comboBoxPersonel.TabIndex = 29;
+            txtBoxAdet.Location = new Point(24, 207);
+            txtBoxAdet.Name = "txtBoxAdet";
+            txtBoxAdet.Size = new Size(158, 23);
+            txtBoxAdet.TabIndex = 16;
             // 
             // label1
             // 
@@ -430,115 +501,64 @@ namespace forms_turk
             label1.TabIndex = 30;
             label1.Text = "Adet";
             // 
+            // comboBoxPersonel
+            // 
+            comboBoxPersonel.FormattingEnabled = true;
+            comboBoxPersonel.Location = new Point(24, 145);
+            comboBoxPersonel.Name = "comboBoxPersonel";
+            comboBoxPersonel.Size = new Size(121, 23);
+            comboBoxPersonel.TabIndex = 29;
+            // 
+            // comboBoxMusteri
+            // 
+            comboBoxMusteri.FormattingEnabled = true;
+            comboBoxMusteri.Location = new Point(24, 91);
+            comboBoxMusteri.Name = "comboBoxMusteri";
+            comboBoxMusteri.Size = new Size(121, 23);
+            comboBoxMusteri.TabIndex = 28;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Impact", 15F);
+            label7.Location = new Point(24, 117);
+            label7.Name = "label7";
+            label7.Size = new Size(83, 25);
+            label7.TabIndex = 27;
+            label7.Text = "Personel";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Impact", 15F);
+            label6.Location = new Point(24, 65);
+            label6.Name = "label6";
+            label6.Size = new Size(73, 25);
+            label6.TabIndex = 26;
+            label6.Text = "Müşteri";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Impact", 15F);
+            label5.Location = new Point(24, 13);
+            label5.Name = "label5";
+            label5.Size = new Size(50, 25);
+            label5.TabIndex = 25;
+            label5.Text = "Ürün";
+            // 
+            // comboBoxUrun
+            // 
+            comboBoxUrun.FormattingEnabled = true;
+            comboBoxUrun.Location = new Point(24, 41);
+            comboBoxUrun.Name = "comboBoxUrun";
+            comboBoxUrun.Size = new Size(121, 23);
+            comboBoxUrun.TabIndex = 0;
+            // 
             // contextMenuStrip1
             // 
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
-            // 
-            // txtBoxAdet
-            // 
-            txtBoxAdet.Location = new Point(24, 207);
-            txtBoxAdet.Name = "txtBoxAdet";
-            txtBoxAdet.Size = new Size(158, 23);
-            txtBoxAdet.TabIndex = 16;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Impact", 15F);
-            label8.Location = new Point(35, 3);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 25);
-            label8.TabIndex = 26;
-            label8.Text = "Ürün";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Impact", 15F);
-            label9.Location = new Point(35, 56);
-            label9.Name = "label9";
-            label9.Size = new Size(108, 25);
-            label9.TabIndex = 27;
-            label9.Text = "Ürün Modeli";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Impact", 15F);
-            label10.Location = new Point(35, 110);
-            label10.Name = "label10";
-            label10.Size = new Size(95, 25);
-            label10.TabIndex = 28;
-            label10.Text = "Ürün Kodu";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(35, 138);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(158, 23);
-            textBox2.TabIndex = 29;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Impact", 15F);
-            label11.Location = new Point(35, 164);
-            label11.Name = "label11";
-            label11.Size = new Size(50, 25);
-            label11.TabIndex = 30;
-            label11.Text = "Fiyat";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(35, 189);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(158, 23);
-            textBox3.TabIndex = 31;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Impact", 15F);
-            label12.Location = new Point(35, 215);
-            label12.Name = "label12";
-            label12.Size = new Size(48, 25);
-            label12.TabIndex = 32;
-            label12.Text = "Stok";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(35, 240);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(158, 23);
-            textBox4.TabIndex = 33;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Impact", 15F);
-            label13.Location = new Point(35, 266);
-            label13.Name = "label13";
-            label13.Size = new Size(90, 25);
-            label13.TabIndex = 34;
-            label13.Text = "Ürün Türü";
-            // 
-            // comboBox4
-            // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(35, 294);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(121, 23);
-            comboBox4.TabIndex = 31;
-            // 
-            // btnProductTypeAdd
-            // 
-            btnProductTypeAdd.Location = new Point(38, 193);
-            btnProductTypeAdd.Name = "btnProductTypeAdd";
-            btnProductTypeAdd.Size = new Size(158, 23);
-            btnProductTypeAdd.TabIndex = 21;
-            btnProductTypeAdd.Text = "Ürün Türü Ekle";
-            btnProductTypeAdd.UseVisualStyleBackColor = true;
             // 
             // panelProductType
             // 
@@ -550,6 +570,22 @@ namespace forms_turk
             panelProductType.Size = new Size(196, 119);
             panelProductType.TabIndex = 26;
             // 
+            // btnAddProductType
+            // 
+            btnAddProductType.Location = new Point(98, 80);
+            btnAddProductType.Name = "btnAddProductType";
+            btnAddProductType.Size = new Size(75, 23);
+            btnAddProductType.TabIndex = 28;
+            btnAddProductType.Text = "Ekle";
+            btnAddProductType.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(15, 42);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(158, 23);
+            textBox5.TabIndex = 27;
+            // 
             // label14
             // 
             label14.AutoSize = true;
@@ -559,13 +595,6 @@ namespace forms_turk
             label14.Size = new Size(90, 25);
             label14.TabIndex = 26;
             label14.Text = "Ürün Türü";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(15, 42);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(158, 23);
-            textBox5.TabIndex = 27;
             // 
             // panel2
             // 
@@ -591,153 +620,13 @@ namespace forms_turk
             panel2.Size = new Size(197, 486);
             panel2.TabIndex = 27;
             // 
-            // label15
+            // comboBoxMahalle
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Impact", 15F);
-            label15.Location = new Point(24, 16);
-            label15.Name = "label15";
-            label15.Size = new Size(32, 25);
-            label15.TabIndex = 27;
-            label15.Text = "Ad";
-            // 
-            // txtBoxCAd
-            // 
-            txtBoxCAd.Location = new Point(24, 42);
-            txtBoxCAd.Name = "txtBoxCAd";
-            txtBoxCAd.Size = new Size(158, 23);
-            txtBoxCAd.TabIndex = 28;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Impact", 15F);
-            label16.Location = new Point(24, 68);
-            label16.Name = "label16";
-            label16.Size = new Size(61, 25);
-            label16.TabIndex = 29;
-            label16.Text = "Soyad";
-            // 
-            // txtBoxCSoyad
-            // 
-            txtBoxCSoyad.Location = new Point(24, 96);
-            txtBoxCSoyad.Name = "txtBoxCSoyad";
-            txtBoxCSoyad.Size = new Size(158, 23);
-            txtBoxCSoyad.TabIndex = 30;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Impact", 15F);
-            label17.Location = new Point(24, 122);
-            label17.Name = "label17";
-            label17.Size = new Size(89, 25);
-            label17.TabIndex = 31;
-            label17.Text = "Şirket Adı";
-            // 
-            // txtBoxCSirket
-            // 
-            txtBoxCSirket.Location = new Point(24, 150);
-            txtBoxCSirket.Name = "txtBoxCSirket";
-            txtBoxCSirket.Size = new Size(158, 23);
-            txtBoxCSirket.TabIndex = 32;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Impact", 15F);
-            label18.Location = new Point(24, 176);
-            label18.Name = "label18";
-            label18.Size = new Size(73, 25);
-            label18.TabIndex = 33;
-            label18.Text = "İletişim";
-            // 
-            // txtBoxCIletisim
-            // 
-            txtBoxCIletisim.Location = new Point(24, 204);
-            txtBoxCIletisim.Name = "txtBoxCIletisim";
-            txtBoxCIletisim.Size = new Size(158, 23);
-            txtBoxCIletisim.TabIndex = 34;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Impact", 15F);
-            label20.Location = new Point(24, 230);
-            label20.Name = "label20";
-            label20.Size = new Size(58, 25);
-            label20.TabIndex = 37;
-            label20.Text = "Adres";
-            // 
-            // btnAddProductType
-            // 
-            btnAddProductType.Location = new Point(98, 80);
-            btnAddProductType.Name = "btnAddProductType";
-            btnAddProductType.Size = new Size(75, 23);
-            btnAddProductType.TabIndex = 28;
-            btnAddProductType.Text = "Ekle";
-            btnAddProductType.UseVisualStyleBackColor = true;
-            // 
-            // btnAddCustomer
-            // 
-            btnAddCustomer.Location = new Point(106, 449);
-            btnAddCustomer.Name = "btnAddCustomer";
-            btnAddCustomer.Size = new Size(75, 23);
-            btnAddCustomer.TabIndex = 29;
-            btnAddCustomer.Text = "Ekle";
-            btnAddCustomer.UseVisualStyleBackColor = true;
-            // 
-            // btnAddShopping
-            // 
-            btnAddShopping.Location = new Point(107, 244);
-            btnAddShopping.Name = "btnAddShopping";
-            btnAddShopping.Size = new Size(75, 23);
-            btnAddShopping.TabIndex = 39;
-            btnAddShopping.Text = "Ekle";
-            btnAddShopping.UseVisualStyleBackColor = true;
-            // 
-            // txtBoxCAdres
-            // 
-            txtBoxCAdres.Location = new Point(24, 258);
-            txtBoxCAdres.Name = "txtBoxCAdres";
-            txtBoxCAdres.Size = new Size(158, 23);
-            txtBoxCAdres.TabIndex = 38;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Impact", 15F);
-            label19.Location = new Point(24, 284);
-            label19.Name = "label19";
-            label19.Size = new Size(54, 25);
-            label19.TabIndex = 39;
-            label19.Text = "Şehir";
-            // 
-            // comboBoxSehir
-            // 
-            comboBoxSehir.FormattingEnabled = true;
-            comboBoxSehir.Location = new Point(24, 312);
-            comboBoxSehir.Name = "comboBoxSehir";
-            comboBoxSehir.Size = new Size(121, 23);
-            comboBoxSehir.TabIndex = 40;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Impact", 15F);
-            label21.Location = new Point(24, 338);
-            label21.Name = "label21";
-            label21.Size = new Size(43, 25);
-            label21.TabIndex = 41;
-            label21.Text = "İlçe";
-            // 
-            // comboBoxIlce
-            // 
-            comboBoxIlce.FormattingEnabled = true;
-            comboBoxIlce.Location = new Point(24, 367);
-            comboBoxIlce.Name = "comboBoxIlce";
-            comboBoxIlce.Size = new Size(121, 23);
-            comboBoxIlce.TabIndex = 42;
+            comboBoxMahalle.FormattingEnabled = true;
+            comboBoxMahalle.Location = new Point(24, 420);
+            comboBoxMahalle.Name = "comboBoxMahalle";
+            comboBoxMahalle.Size = new Size(121, 23);
+            comboBoxMahalle.TabIndex = 44;
             // 
             // label22
             // 
@@ -749,13 +638,152 @@ namespace forms_turk
             label22.TabIndex = 43;
             label22.Text = "Mahalle";
             // 
-            // comboBoxMahalle
+            // comboBoxIlce
             // 
-            comboBoxMahalle.FormattingEnabled = true;
-            comboBoxMahalle.Location = new Point(24, 420);
-            comboBoxMahalle.Name = "comboBoxMahalle";
-            comboBoxMahalle.Size = new Size(121, 23);
-            comboBoxMahalle.TabIndex = 44;
+            comboBoxIlce.FormattingEnabled = true;
+            comboBoxIlce.Location = new Point(24, 367);
+            comboBoxIlce.Name = "comboBoxIlce";
+            comboBoxIlce.Size = new Size(121, 23);
+            comboBoxIlce.TabIndex = 42;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Impact", 15F);
+            label21.Location = new Point(24, 338);
+            label21.Name = "label21";
+            label21.Size = new Size(43, 25);
+            label21.TabIndex = 41;
+            label21.Text = "İlçe";
+            // 
+            // comboBoxSehir
+            // 
+            comboBoxSehir.DataSource = sehirBindingSource;
+            comboBoxSehir.FormattingEnabled = true;
+            comboBoxSehir.Location = new Point(24, 312);
+            comboBoxSehir.Name = "comboBoxSehir";
+            comboBoxSehir.Size = new Size(121, 23);
+            comboBoxSehir.TabIndex = 40;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Impact", 15F);
+            label19.Location = new Point(24, 284);
+            label19.Name = "label19";
+            label19.Size = new Size(54, 25);
+            label19.TabIndex = 39;
+            label19.Text = "Şehir";
+            // 
+            // btnAddCustomer
+            // 
+            btnAddCustomer.Location = new Point(106, 449);
+            btnAddCustomer.Name = "btnAddCustomer";
+            btnAddCustomer.Size = new Size(75, 23);
+            btnAddCustomer.TabIndex = 29;
+            btnAddCustomer.Text = "Ekle";
+            btnAddCustomer.UseVisualStyleBackColor = true;
+            // 
+            // txtBoxCAdres
+            // 
+            txtBoxCAdres.Location = new Point(24, 258);
+            txtBoxCAdres.Name = "txtBoxCAdres";
+            txtBoxCAdres.Size = new Size(158, 23);
+            txtBoxCAdres.TabIndex = 38;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Impact", 15F);
+            label20.Location = new Point(24, 230);
+            label20.Name = "label20";
+            label20.Size = new Size(58, 25);
+            label20.TabIndex = 37;
+            label20.Text = "Adres";
+            // 
+            // txtBoxCIletisim
+            // 
+            txtBoxCIletisim.Location = new Point(24, 204);
+            txtBoxCIletisim.Name = "txtBoxCIletisim";
+            txtBoxCIletisim.Size = new Size(158, 23);
+            txtBoxCIletisim.TabIndex = 34;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Impact", 15F);
+            label18.Location = new Point(24, 176);
+            label18.Name = "label18";
+            label18.Size = new Size(73, 25);
+            label18.TabIndex = 33;
+            label18.Text = "İletişim";
+            // 
+            // txtBoxCSirket
+            // 
+            txtBoxCSirket.Location = new Point(24, 150);
+            txtBoxCSirket.Name = "txtBoxCSirket";
+            txtBoxCSirket.Size = new Size(158, 23);
+            txtBoxCSirket.TabIndex = 32;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Impact", 15F);
+            label17.Location = new Point(24, 122);
+            label17.Name = "label17";
+            label17.Size = new Size(89, 25);
+            label17.TabIndex = 31;
+            label17.Text = "Şirket Adı";
+            // 
+            // txtBoxCSoyad
+            // 
+            txtBoxCSoyad.Location = new Point(24, 96);
+            txtBoxCSoyad.Name = "txtBoxCSoyad";
+            txtBoxCSoyad.Size = new Size(158, 23);
+            txtBoxCSoyad.TabIndex = 30;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Impact", 15F);
+            label16.Location = new Point(24, 68);
+            label16.Name = "label16";
+            label16.Size = new Size(61, 25);
+            label16.TabIndex = 29;
+            label16.Text = "Soyad";
+            // 
+            // txtBoxCAd
+            // 
+            txtBoxCAd.Location = new Point(24, 42);
+            txtBoxCAd.Name = "txtBoxCAd";
+            txtBoxCAd.Size = new Size(158, 23);
+            txtBoxCAd.TabIndex = 28;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Impact", 15F);
+            label15.Location = new Point(24, 16);
+            label15.Name = "label15";
+            label15.Size = new Size(32, 25);
+            label15.TabIndex = 27;
+            label15.Text = "Ad";
+            // 
+            // daaaaBindingSource
+            // 
+            daaaaBindingSource.DataSource = typeof(Migrations.daaaa);
+            // 
+            // sehirBindingSource
+            // 
+            sehirBindingSource.DataSource = typeof(Models.Sehir);
+            // 
+            // sehirBindingSource1
+            // 
+            sehirBindingSource1.DataSource = typeof(Models.Sehir);
+            // 
+            // sehirBindingSource2
+            // 
+            sehirBindingSource2.DataSource = typeof(Models.Sehir);
             // 
             // FormHome
             // 
@@ -788,6 +816,10 @@ namespace forms_turk
             panelProductType.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)daaaaBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sehirBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sehirBindingSource1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sehirBindingSource2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -888,5 +920,9 @@ namespace forms_turk
         private Label label21;
         private ComboBox comboBoxSehir;
         private Label label19;
+        private BindingSource daaaaBindingSource;
+        private BindingSource sehirBindingSource;
+        private BindingSource sehirBindingSource2;
+        private BindingSource sehirBindingSource1;
     }
 }
